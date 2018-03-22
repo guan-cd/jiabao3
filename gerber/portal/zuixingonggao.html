@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>最新公告</title>
+	<link rel="stylesheet" type="text/css" href="__TMPL__/public/assets/css/indexzyr.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/bootstrap.css">
+</head>
+<body>
+	
+  
+<div class="head">
+<div class="m">
+
+  <div class="container information">
+         <div class="content">
+            <!--  联系start  -->
+            <div class="relation">
+                <p><span class="iphone"></span><span class="serviceHotline">全国统一服务热线</span><span class="tit">400-8888-116</span></p>
+                <ul>
+                    <li><span class="branch"></span>网点信息</li>
+                    <li><span class="talents"></span>人才招聘</li>
+                    <li><span class="service"></span>在线客服</li>
+                </ul>
+            </div>
+            <!--   联系end   -->
+
+        </div>
+   </div>
+  
+</div>
+</div>
+
+<div class="qrct">
+<div class="m">
+
+<div class="ctle">
+
+   <a href="{:url('/')}"><img src="__TMPL__/public/assets/images/jimg1.png"/></a>
+
+</div>
+
+<!--主导航-->
+<div class="ctlk">
+       <ul>
+           <volist name="navInfo" id="navInfoVo">
+               <if condition="$navInfoVo.name == '投资者关系'">
+                   <li><a href="{:url($navInfoVo.href)}" target="{$navInfoVo.target}" class="iiiw">{$navInfoVo.name}</a></li>
+                   <else/>
+                   <li><a href="{:url($navInfoVo.href)}" target="{$navInfoVo.target}">{$navInfoVo.name}</a></li>
+               </if>
+           </volist>
+      </ul>
+</div>
+
+
+<div class="ctrg">
+    <img src="__TMPL__/public/assets/images/jimg2.png"/>
+</div>
+</div>
+</div>
+
+<div class="banner">
+   <img src="__TMPL__/public/assets/images/jimg3.png"/>
+</div>
+<!--二级导航-->
+<div class="lmqr">
+     <ul>
+         <volist name="twoNav" id="twoNavVo">
+             <if condition="$twoNavVo.name == '最新公告'">
+                 <li class="liqr"><a href="{:url($twoNavVo.href)}" target="{$twoNavVo.target}">{$twoNavVo.name}</a></li>
+                 <else />
+                 <li ><a href="{:url($twoNavVo.href)}" target="{$twoNavVo.target}">{$twoNavVo.name}</a></li>
+             </if>
+         </volist>
+
+     </ul>
+</div>
+
+
+
+<div class="lmds" style="margin-top:30px;">
+      
+    <div class="m">
+
+      <div class="n">
+
+           <h1>最新公告</h1>
+
+           <div class="ctoi">
+             LATEST 
+              ANNOUNCEMENT
+           </div>
+
+
+           <div class="iuqx">
+       
+             <ul>
+                <!--<li>
+                 <div class="lipq">
+                    <div class="lmiu">
+                        <div class="liwq">
+
+                           <img src="__TMPL__/public/assets/images/ctaa.png">
+                            
+                        </div>
+                         <div class="jhas">
+                                <p>嘉宝股份 承诺管理制度</p> 
+                                <p class="iusg">2017/03/14</p>
+                         </div>
+
+                  
+                       <div class="iuwm">
+                         <img src="__TMPL__/public/assets/images/tas.png" style="vertical-align: middle; padding-right: 4px;">
+                           <a href="#">
+                         点击下载
+                        </a>
+                       </div>
+                  
+
+                     <a href="#">
+                     <div class="iuwx">
+                       <img src="__TMPL__/public/assets/images/iuzx.png" style="vertical-align:middle; padding-right: 4px;">详情
+                       </div>
+                     </a>
+
+                    </div>
+                 </div>
+
+                    
+                </li>
+
+                 <li>
+                 <div class="lipq">
+                    <div class="lmiu">
+                        <div class="liwq">
+
+                           <img src="__TMPL__/public/assets/images/ctaa.png">
+                            
+                        </div>
+                         <div class="jhas">
+                                <p>嘉宝股份 承诺管理制度</p> 
+                                <p class="iusg">2017/03/14</p>
+                         </div>
+
+                  
+                       <div class="iuwm">
+                         <img src="__TMPL__/public/assets/images/tas.png" style="vertical-align: middle; padding-right: 4px;">
+                           <a href="#">
+                         点击下载
+                        </a>
+                       </div>
+                  
+
+                     <a href="#">
+                     <div class="iuwx">
+                       <img src="__TMPL__/public/assets/images/iuzx.png" style="vertical-align:middle; padding-right: 4px;">详情
+                       </div>
+                     </a>
+
+                    </div>
+                 </div>
+
+                    
+                </li>
+ <li>
+                 <div class="lipq">
+                    <div class="lmiu">
+                        <div class="liwq">
+
+                           <img src="__TMPL__/public/assets/images/ctaa.png">
+                            
+                        </div>
+                         <div class="jhas">
+                                <p>嘉宝股份 承诺管理制度</p> 
+                                <p class="iusg">2017/03/14</p>
+                         </div>
+
+                  
+                       <div class="iuwm">
+                         <img src="__TMPL__/public/assets/images/tas.png" style="vertical-align: middle; padding-right: 4px;">
+                           <a href="#">
+                         点击下载
+                        </a>
+                       </div>
+                  
+
+                     <a href="#">
+                     <div class="iuwx">
+                       <img src="__TMPL__/public/assets/images/iuzx.png" style="vertical-align:middle; padding-right: 4px;">详情
+                       </div>
+                     </a>
+
+                    </div>
+                 </div>
+
+                    
+                </li>
+
+                 <li>
+                 <div class="lipq">
+                    <div class="lmiu">
+                        <div class="liwq">
+
+                           <img src="__TMPL__/public/assets/images/ctaa.png">
+                            
+                        </div>
+                         <div class="jhas">
+                                <p>嘉宝股份 承诺管理制度</p> 
+                                <p class="iusg">2017/03/14</p>
+                         </div>
+
+                  
+                       <div class="iuwm">
+                         <img src="__TMPL__/public/assets/images/tas.png" style="vertical-align: middle; padding-right: 4px;">
+                           <a href="#">
+                         点击下载
+                        </a>
+                       </div>
+                  
+
+                     <a href="#">
+                     <div class="iuwx">
+                       <img src="__TMPL__/public/assets/images/iuzx.png" style="vertical-align:middle; padding-right: 4px;">详情
+                       </div>
+                     </a>
+
+                    </div>
+                 </div>
+
+                    
+                </li>
+
+                 <li>
+                 <div class="lipq">
+                    <div class="lmiu">
+                        <div class="liwq">
+
+                           <img src="__TMPL__/public/assets/images/ctaa.png">
+                            
+                        </div>
+                         <div class="jhas">
+                                <p>嘉宝股份 承诺管理制度</p> 
+                                <p class="iusg">2017/03/14</p>
+                         </div>
+
+                  
+                       <div class="iuwm">
+                         <img src="__TMPL__/public/assets/images/tas.png" style="vertical-align: middle; padding-right: 4px;">
+                           <a href="#">
+                         点击下载
+                        </a>
+                       </div>
+                  
+
+                     <a href="#">
+                     <div class="iuwx">
+                       <img src="__TMPL__/public/assets/images/iuzx.png" style="vertical-align:middle; padding-right: 4px;">详情
+                       </div>
+                     </a>
+
+                    </div>
+                 </div>
+
+                    
+                </li>
+                
+ <li>
+                 <div class="lipq">
+                    <div class="lmiu">
+                        <div class="liwq">
+
+                           <img src="__TMPL__/public/assets/images/ctaa.png">
+                            
+                        </div>
+                         <div class="jhas">
+                                <p>嘉宝股份 承诺管理制度</p> 
+                                <p class="iusg">2017/03/14</p>
+                         </div>
+
+                  
+                       <div class="iuwm">
+                         <img src="__TMPL__/public/assets/images/tas.png" style="vertical-align: middle; padding-right: 4px;">
+                           <a href="#">
+                         点击下载
+                        </a>
+                       </div>
+                  
+
+                     <a href="#">
+                     <div class="iuwx">
+                       <img src="__TMPL__/public/assets/images/iuzx.png" style="vertical-align:middle; padding-right: 4px;">详情
+                       </div>
+                     </a>
+
+                    </div>
+                 </div>
+
+                    
+                </li>-->
+                 <for start="0" end="$arrCount"  step="1" name="i" >
+                     <li>
+                         <div class="lipq">
+                             <div class="lmiu">
+                                 <div class="liwq">
+
+                                     <img src="__TMPL__/public/assets/images/ctaa.png">
+
+                                 </div>
+                                 <div class="jhas">
+                                     <p>{$arcListMin['data'][$i]['post_title']}</p>
+                                     <p class="iusg">{:date('Y/m/d',$arcListMin['data'][$i]['published_time'])}</p>
+                                 </div>
+
+
+                                 <div class="iuwm">
+                                     <img src="__TMPL__/public/assets/images/tas.png" style="vertical-align: middle; padding-right: 4px;">
+                                     <a href="__ROOT__/upload/{$arcListMin['data'][$i]['more']['files']['0']['url']|default='#'}">
+                                         点击下载
+                                     </a>
+                                 </div>
+
+
+                                 <a href="#">
+                                     <div class="iuwx">
+                                         <img src="__TMPL__/public/assets/images/iuzx.png" style="vertical-align:middle; padding-right: 4px;">详情
+                                     </div>
+                                 </a>
+
+                             </div>
+                         </div>
+
+
+                     </li>
+                 </for>
+                
+               
+             </ul>
+
+             
+           </div>
+          <div class="pagex">{$page}</div>
+           <div style="clear: both;"></div>
+           <div class="mnlf">
+          </div>
+
+      </div>
+ 
+
+     
+
+   </div>
+
+
+</div>
+
+
+<div class="iusa">
+   <img src="__TMPL__/public/assets/images/frfc.png">
+</div>
+
+
+<div class="Footer">
+ 
+  <div class="x">
+     
+     <div class="lkqr">
+          <img src="__TMPL__/public/assets/images/foot_logo.png"/>
+     </div>
+
+      <div class="lkqc">
+
+       <span>如遇到问题，请联系我们</span>
+
+         <p class="kmws">地址：成都市高新西区西芯大道9号</p>
+         <p>服务热线：400-8888-116        &nbsp;&nbsp;   审计监督：028-87826372</p>
+         <p>招标采购热线：028-87826299    &nbsp;&nbsp;嘉宝股份前台：028-87829522</p>
+          
+      </div>
+
+      <div class="lkqf">
+          <img src="__TMPL__/public/assets/images/logo_wx.png"/>
+          <p>官方微信</p>
+     </div>
+     
+  </div>
+
+</div>
+
+
+</body>
+</html>

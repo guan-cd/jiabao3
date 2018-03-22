@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{$arcInfo.post_title}</title>
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/base.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/commonality.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/index.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/fonts/glyphicons-halflings-regular.eot">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/officeEnvironment.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/footer.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/header.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/neinav.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/swiper.min.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/userdetail.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/indexzyr.css">
+
+
+
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/header.css">
+
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/shehuizhaoping.css">
+
+
+</head>
+<body>
+
+
+
+
+
+<div class="head">
+<div class="m">
+  
+
+  <div class="container information">
+         <div class="content">
+            <!--  联系start  -->
+            <div class="relation">
+                <p><span class="iphone"></span><span class="serviceHotline">全国统一服务热线</span><span class="tit">400-8888-116</span></p>
+                <ul>
+                    <li><span class="branch"></span>网点信息</li>
+                    <li><span class="talents"></span>人才招聘</li>
+                    <li><span class="service"></span>在线客服</li>
+                </ul>
+            </div>
+            <!--   联系end   -->
+
+        </div>
+   </div>
+  
+</div>
+</div>
+
+<div class="qrct">
+<div class="m">
+
+<div class="ctle">
+
+   <a href="{:url('portal/index/index')}"><img src="__TMPL__/public/assets/images/jimg1.png"/></a>
+
+</div>
+
+<div class="ctlk">
+       <ul>
+           <volist name="navInfo" id="navInfoVo">
+               <if condition="$navInfoVo.name == '加入我们'">
+                   <li><a href="{:url($navInfoVo.href)}" class="iiiw">{$navInfoVo.name}</a></li>
+                   <else/>
+                   <li><a href="{:url($navInfoVo.href)}">{$navInfoVo.name}</a></li>
+               </if>
+           </volist>
+      </ul>
+</div>
+
+<div class="ctrg">
+    <img src="__TMPL__/public/assets/images/jimg2.png"/>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="bj banner">
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="__TMPL__/public/assets/img/bg_02.png" alt="" class="img-responsive"></div>
+        </div>
+
+    </div>
+
+</div>
+
+ <div class="navtwocontent">
+        <div class="container navtwobox">
+        <div class="row">
+        <div class="col-lg-7 col-md-7 col-sm-7 col-lg-offset-3 marginleft29">
+        <ul class="list list-unstyled">
+            <volist name="twoNav" id="twoNavVo">
+
+
+                    <li><a href="yuangonghuodong.html">{$twoNavVo.name}</a></li>
+
+
+            </volist>
+        </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+
+<div class="whitbg">
+    <div class="user_content container">
+        <h1>{$arcInfo.post_title}</h1>
+        <p><span>来源：{$arcInfo.post_source}</span>
+            <span>发布时间：{:date('Y/m/d',$arcInfo.published_time)}</span>
+            <!--<span>浏览次数：122</span></p>-->
+        <div class="sharebox">
+            <ul class="share">
+                <li style="margin-left: -50px;">分享至</li>
+                <div class="bdsharebuttonbox mniu"><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a></div>
+                <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"1","bdSize":"24"},"share":{},"":{"viewList":["weixin","tsina","qzone","sqq"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["weixin","tsina","qzone","sqq"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+            </ul>
+        </div>
+        <!--<div class="user_des">
+            <p>本次户外拓展活动以“奋斗、担当、包容”为主题，旨在提高员工的责任意识、沟通意识、团队意识，增进员工之间的沟通交流，调动员工的工作积极性，增强团队的凝聚力，体现公司对广大员工的关爱。</p>
+        </div>
+        <img src="__TMPL__/public/assets/img/userdetail1_03.png" class="img-responsive" alt="">
+        <div class="user_des">
+            <p class="user_destwo">
+                8:30，阳光和煦，我们集合后搭乘公司大巴向三水桥鑫生态园出发，路程中，王宏树常务副总监主持介绍本次活动目的、流程，并让大家逐一作了简单的自我介绍，新员工在自我介绍过程中表达了对公司的印象和选择留在德冠、认同公司企业文化原因。在“企业文化”有奖问答活动中，新员工展现的积极性和对公司历史、企业文化、
+                公司品牌、产品种类等的了解程度超出了我们的想象。
+            </p>
+        </div>
+        <img src="__TMPL__/public/assets/img/userdetail2_07.png" class="img-responsive" alt="">
+        <div class="user_des">
+            <p class="user_destwo">
+                午饭后，我们组织了带摄影任务的游园活动，参观了高科技农业展示温室、奇异瓜果、无土载培、百草园、盆景园、仿古农舍、农家动物园、绿色长廊、百果园等景点。接着，进行了拓展训练项目四“极速时限”、项目五“青蛙过河”、项目六“钉子游戏”，考验团队合作精神与协调能力，突出团队管理及心态管理、学习的重要性，
+                让学员不要过早的说“不可能”，努力在尝试中突破自己。
+            </p>
+        </div>-->
+
+        {$arcInfo.post_content|htmlspecialchars_decode}
+
+    </div>
+</div>
+<div class="bgcontent">
+    <div class="container bgcon">
+    </div>
+    <div class="bgf"></div>
+</div>
+
+
+
+<div class="Footer">
+
+    <div class="x">
+
+        <div class="lkqr">
+            <img src="__TMPL__/public/assets/img/foot_logo.png"/>
+        </div>
+
+        <div class="lkqc">
+
+            <span>如遇到问题，请联系我们</span>
+
+            <p class="kmws">地址：成都市高新西区西芯大道9号</p>
+            <p>服务热线：400-8888-116        &nbsp;&nbsp;   审计监督：028-87826372</p>
+            <p>招标采购热线：028-87826299    &nbsp;&nbsp;嘉宝股份前台：028-87829522</p>
+
+        </div>
+
+        <div class="lkqf">
+            <img src="img/logo_wx.png"/>
+            <p>官方微信</p>
+        </div>
+
+    </div>
+
+</div>
+<script src="__TMPL__/public/assets/js/jquery-1.11.3.min.js"></script>
+<script src="__TMPL__/public/assets/js/swiper.js"></script>
+<script src="__TMPL__/public/assets/js/progressbar.min.js"></script>
+<script src="__TMPL__/public/assets/js/navstyle.js"></script>
+<script src="__TMPL__/public/assets/js/index.js"></script>
+<script>
+
+</script>
+</body>
+</html>

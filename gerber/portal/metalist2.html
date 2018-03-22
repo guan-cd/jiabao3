@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>媒体报道</title>
+	<link rel="stylesheet" type="text/css" href="__TMPL__/public/assets/css/indexzyr.css">
+  <link rel="stylesheet" type="text/css" href="__TMPL__/public/assets/css/neinav.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__/public/assets/css/pagesx.css">
+    <link rel="stylesheet" type="text/css" href="__TMPL__/public/assets/css/bootstrap.css">
+</head>
+<body>
+	
+  
+<div class="head">
+<div class="m">
+
+  <div class="container information">
+         <div class="content">
+            <!--  联系start  -->
+            <div class="relation">
+                <p><span class="iphone"></span><span class="serviceHotline">全国统一服务热线</span><span class="tit">400-8888-116</span></p>
+                <ul>
+                    <li><span class="branch"></span>网点信息</li>
+                    <li><span class="talents"></span>人才招聘</li>
+                    <li><span class="service"></span>在线客服</li>
+                </ul>
+            </div>
+            <!--   联系end   -->
+
+        </div>
+   </div>
+  
+</div>
+</div>
+
+<div class="qrct">
+<div class="m">
+
+<div class="ctle">
+
+   <a href="{:url('/')}"><img src="__TMPL__/public/assets/images/jimg1.png"/></a>
+
+</div>
+
+<!--主导航-->
+<div class="ctlk">
+       <ul>
+           <volist name="navInfo" id="navInfoVo">
+               <if condition="$navInfoVo.name == '媒体中心'">
+                   <li><a href="{:url($navInfoVo.href)}" target="{$navInfoVo.target}" class="iiiw">{$navInfoVo.name}</a></li>
+                   <else/>
+                   <li><a href="{:url($navInfoVo.href)}" target="{$navInfoVo.target}">{$navInfoVo.name}</a></li>
+               </if>
+           </volist>
+      </ul>
+</div>
+
+<div class="ctrg">
+    <img src="__TMPL__/public/assets/images/jimg2.png"/>
+</div>
+</div>
+</div>
+
+<div class="banner">
+   <img src="__TMPL__/public/assets/images/jimg3.png"/>
+</div>
+
+<div class="lmqr">
+     <ul>
+         <volist name="twoNav" id="twoNavVo">
+             <if condition="$twoNavVo.name == '媒体报道'">
+                 <li class="liqr"><a href="{:url($twoNavVo.href)}" target="{$twoNavVo.target}">{$twoNavVo.name}</a></li>
+                 <else />
+                 <li><a href="{:url($twoNavVo.href)}" target="{$twoNavVo.target}">{$twoNavVo.name}</a></li>
+             </if>
+         </volist>
+     </ul>
+</div>
+
+
+<div class="lmds" style="margin-top: 30px;">
+      
+    <div class="m">
+
+      <div class="n">
+
+           <h1>媒体报道</h1>
+
+           <div class="ctoi">
+             MEDIA 
+              PERORTS
+           </div>
+
+
+           <div class="iuqa">
+       
+             <ul>
+
+                 <volist name="arcList" id="arcListVo">
+                     <li>
+                         <if condition="$arcListVo['other_url'] == ''">
+                             <a href="{:url('portal/Common/index',array('arcId'=>$arcListVo.id))}">
+                                 <div class="lmwq">
+                                     <img style="width: 497px;height: 224px" src="__ROOT__/upload/{$arcListVo.more.thumbnail}"/>
+                                 </div>
+                             </a>
+                             <else />
+                             <a href="{$arcListVo.other_url}">
+                                 <div class="lmwq">
+                                     <img style="width: 497px;height: 224px" src="__ROOT__/upload/{$arcListVo.more.thumbnail}"/>
+                                 </div>
+                             </a>
+                         </if>
+
+                         <div class="lmkk">
+
+                             <p>{$arcListVo.post_title} </p>
+                             <span>
+                    <img src="__TMPL__/public/assets/images/jimg5.jpg" style="vertical-align:bottom; padding-right: 10px;">
+                    <span class="iuqf">{:date('Y-m-d',$arcListVo.published_time)}</span>
+                    </span>
+
+                             <div class="lmqk">{$arcListVo.post_excerpt}
+                             </div>
+                             <if condition="$arcListVo['other_url'] == ''">
+                                 <a href="{:url('portal/Common/index',array('arcId'=>$arcListVo.id))}"> <div class="hbss">查看全部</div></a>
+                                 <else />
+                                 <a href="{$arcListVo.other_url}"> <div class="hbss">查看全部</div></a>
+                             </if>
+
+
+                         </div>
+
+                     </li>
+                 </volist>
+                
+             </ul>
+
+             
+           </div>
+
+           <div style="clear: both;"></div>
+
+           <div class="mnlf">
+
+             <ul>
+                 <for start="0" end="$arrCount"  step="1" name="i" >
+                     <if condition="$arcList.0.id != $arcListMin['data'][$i]['id'] && $arcList.1.id != $arcListMin['data'][$i]['id']">
+
+                         <li>
+
+                             <div class="uygv">
+                                 <if condition="$arcListMin['data'][$i]['other_url'] == ''">
+                                     <a href="{:url('portal/Common/index',array('arcId'=>$arcListMin['data'][$i]['id']))}"> <img style="width: 184px;height: 212px" src="__ROOT__/upload/{$arcListMin['data'][$i]['more']['thumbnail']}"></a>
+                                     <else />
+                                     <a href="{$arcListMin['data'][$i]['other_url']}"> <img style="width: 184px;height: 212px" src="__ROOT__/upload/{$arcListMin['data'][$i]['more']['thumbnail']}"></a>
+                                 </if>
+
+
+                             </div>
+
+                             <div class="kmer">
+                                 <if condition="$arcListMin['data'][$i]['other_url'] == ''">
+                                     <a href="{:url('portal/Common/index',array('arcId'=>$arcListMin['data'][$i]['id']))}"><p>{$arcListMin['data'][$i]['post_title']}</p></a>
+                                     <esle />
+                                     <a href="{$arcListMin['data'][$i]['other_url']}"><p>{$arcListMin['data'][$i]['post_title']}</p></a>
+                                 </if>
+
+                                 <if condition="$arcListMin['data'][$i]['other_url'] == ''">
+                                     <a style="margin-left: -595px" href="{:url('portal/Common/index',array('arcId'=>$arcListMin['data'][$i]['id']))}"><span>{$arcListMin['data'][$i]['post_excerpt']}</span></a>
+                                     <else />
+                                     <a style="margin-left: -595px" href="$arcListMin['data'][$i]['other_url']"><span>{$arcListMin['data'][$i]['post_excerpt']}</span></a>
+                                 </if>
+
+
+                                 <div class="qrat lmop">
+                                     <img src="__TMPL__/public/assets/images/jimg6.jpg" style="vertical-align:middle; padding-right: 10px;"><span class="iuqf">{$arcListMin['data'][$i]['post_hits']}</span>
+                                 </div>
+                                 <div class="qras lmop">
+
+                                     <img src="__TMPL__/public/assets/images/jimg5.jpg" style="vertical-align:middle; padding-right: 10px;"><span class="iuqf">{:date('Y-m-d',$arcListMin['data'][$i]['published_time'])}</span>
+
+                                 </div>
+                             </div>
+                         </li>
+                     </if>
+                 </for>
+             </ul>
+               <div class="pagex">{$page}</div>
+           </div>
+      </div>
+    </div>
+</div>
+
+
+<div class="iusa">
+   <img src="__TMPL__/public/assets/images/frfc.png">
+</div>
+
+
+<div class="Footer">
+ 
+  <div class="x">
+     
+     <div class="lkqr">
+          <img src="__TMPL__/public/assets/images/foot_logo.png"/>
+     </div>
+
+      <div class="lkqc">
+
+       <span>如遇到问题，请联系我们</span>
+
+         <p class="kmws">地址：成都市高新西区西芯大道9号</p>
+         <p>服务热线：400-8888-116        &nbsp;&nbsp;   审计监督：028-87826372</p>
+         <p>招标采购热线：028-87826299    &nbsp;&nbsp;嘉宝股份前台：028-87829522</p>
+          
+      </div>
+
+      <div class="lkqf">
+          <img src="__TMPL__/public/assets/images/logo_wx.png"/>
+          <p>官方微信</p>
+     </div>
+     
+  </div>
+
+</div>
+
+
+</body>
+</html>

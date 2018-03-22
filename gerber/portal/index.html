@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>嘉宝官网</title>
+    <!--<link rel="stylesheet" href="css/swiper.css">-->
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/base.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/commonality.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/index.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/fonts/glyphicons-halflings-regular.eot">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/officeEnvironment.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/footer.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/header.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/swiper.min.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/newheaderadd.css">
+
+</head>
+<body>
+<!--顶部-->
+<div class="indexcontent">
+    <div class="container information">
+        <div class="content">
+            <!--  联系start  -->
+            <div class="relation">
+                <p><span class="iphone"></span><span class="serviceHotline">全国统一服务热线</span><span class="tit">400-8888-116</span></p>
+                <ul>
+                    <li><span class="branch"></span>网点信息</li>
+                    <li><span class="talents"></span>人才招聘</li>
+                    <li><span class="service"></span>在线客服</li>
+                </ul>
+            </div>
+            <!--   联系end   -->
+
+        </div>
+
+    </div>
+</div>
+
+
+<!--首页导航-->
+    <div class="header">
+    <div class="headerbox">
+        <div class="container header_h">
+            <div class="hea-top">
+                <a href="/"><h1>嘉宝股份</h1></a>
+                <div class="search">
+                    <input type="text">
+                    <span class="glyphicon glyphicon-search"></span>
+                </div>
+            </div>
+            <div class="hea-bot">
+                <ul class="indexnav">
+                <volist name="navInfo" id="navVo">
+                    <li>
+                        <a href="{:url($navVo.href)}" target="{$navVo.target}" class="shouye">{$navVo.name}</a>
+                    </li>
+                </volist>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="bj banner">
+    <!--幻灯片-->
+    <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <volist name="sliderImg" id="sliderVo">
+                    <div class="swiper-slide">
+                        <img src="__ROOT__/upload/{$sliderVo.image}" alt="" class="img-responsive">
+                    </div>
+                </volist>
+            </div>
+            <!-- 分页器 -->
+            <div class="fenye">
+                <div class="container fenyebox">
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="mediaCenter">
+            <div class="row">
+                <div class="col-lg-12 morebox">
+                    <img src="__TMPL__/public/assets/img/morebg_03.png" class="img-responsive" alt="">
+                    <div class="more">
+                        <a href="http://j.guguan.net/jiabao/metalist.html" class="moreadda">
+                            <span class="moretext">more</span>
+                            <img src="__TMPL__/public/assets/img/more_03.png" class="moreadd" alt="">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <!--媒体中心-->
+            <div class="row">
+                <volist name="newInfo" id="newInfoVo">
+                    <div class="col-md-4">
+                        <div class="thumbnail">
+                            <a href="http://j.guguan.net/jiabao/show.html">
+                                <img src="__ROOT__/upload/{$newInfoVo.more.thumbnail}" alt="">
+
+                                <div class="text-center mediaCenter-bj-p">
+                                    <p>{$newInfoVo.post_title}</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </volist>
+                <!--<div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="http://j.guguan.net/jiabao/show.html">
+                            <img src="__TMPL__/public/assets/img/img7.png" alt="">
+
+                            <div class="text-center mediaCenter-bj-p">
+                                <p>嘉宝股份品牌价值达23.26亿</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="http://j.guguan.net/jiabao/show.html">
+                            <img src="__TMPL__/public/assets/img/one.png" alt="">
+
+                            <div class="text-center mediaCenter-bj-p">
+                                <p>嘉宝股份品牌价值达23.26亿</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="http://j.guguan.net/jiabao/show.html">
+                            <img src="__TMPL__/public/assets/img/two.png" alt="">
+                            <div class="text-center mediaCenter-bj-p">
+                                <p>嘉宝股份品牌价值达23.26亿</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <div class="row margin10">
+            <div class="col-lg-8">
+                <video src="movie.ogg" controls="controls" poster="__TMPL__/public/assets/img/play_07.png" height="434">
+                    您的浏览器不支持 video 标签。
+                </video>
+            </div>
+            <div class="col-lg-4 videoimg">
+                <img class="video-right hidden-md hidden-sm img-responsive" src="__TMPL__/public/assets/img/img11.png" c alt="">
+            </div>
+        </div>
+
+    </div>
+    <div class="bj" style="margin-top: 10px;">
+        <ul><li><img src="__TMPL__/public/assets/img/img12.png" alt=""></li>
+
+        </ul>
+    </div>
+    <div class="container">
+        <div class="bj margin10 mapbox">
+            <img src="__TMPL__/public/assets/img/img19.png" alt="">
+            <div class="city">18</div>
+            <div class="xiangmu">152</div>
+        </div>
+        <div class="exist text-center">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 paddingnone paddingright10">
+                    <div class="exist-left-bj hidden-md hidden-sm lunboxtest">
+                        <div class="jiantou1">
+                            <img src="__TMPL__/public/assets/img/jiantou1_03.png" alt="">
+                        </div>
+                        <div class="lunbox">
+                            <div class="lunboximgs">
+                                <img src="__TMPL__/public/assets/img/lunbo_03.png" alt="1" class="imgwidth">
+                                <img src="__TMPL__/public/assets/img/lunbo_03.png" alt="2">
+                                <img src="__TMPL__/public/assets/img/lunbo_03.png" alt="3">
+                                <img src="__TMPL__/public/assets/img/lunbo_03.png" alt="4">
+                            </div>
+                        </div>
+                        <div class="jiantou2">
+                            <img src="__TMPL__/public/assets/img/jiantou1_03.png" alt="">
+                        </div>
+                        <div class="jiayuanshenghuo">
+                            <span>嘉园生活</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-12 col-sm-12 paddingnone erweima">
+                    <img class="exist-right-bj img-responsive" src="__TMPL__/public/assets/img/bj-right.png"  alt="">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!--<div class="footer">-->
+    <!--<div class="container">-->
+    <!--<div class="row">-->
+    <!--<img src="./img/footer_03.png" class="img-responsive" alt="">-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <div style="clear: both"></div>
+    <div class="Footer">
+
+        <div class="x">
+
+            <div class="lkqr">
+                <img src="__TMPL__/public/assets/img/foot_logo.png"/>
+            </div>
+
+            <div class="lkqc">
+
+                <span>如遇到问题，请联系我们</span>
+
+                <p class="kmws">地址：成都市高新西区西芯大道9号</p>
+                <p>服务热线：400-8888-116        &nbsp;&nbsp;   审计监督：028-87826372</p>
+                <p>招标采购热线：028-87826299    &nbsp;&nbsp;嘉宝股份前台：028-87829522</p>
+
+            </div>
+
+            <div class="lkqf">
+                <img src="__TMPL__/public/assets/img/logo_wx.png"/>
+                <p>官方微信</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+    <script src="__TMPL__/public/assets/js/jquery-1.11.3.min.js"></script>
+    <script src="__TMPL__/public/assets/js/swiper.js"></script>
+    <script src="__TMPL__/public/assets/js/progressbar.min.js"></script>
+    <script src="__TMPL__/public/assets/js/navstyle.js"></script>
+    <script src="__TMPL__/public/assets/js/index.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container',{
+        // autoplay: true,//可选选项，自动滑动
+        loop:true,
+        speed : 1000,
+        autoplay :3000,
+        pagination:'.swiper-pagination',
+        autoplayDisableOnInteraction : false
+    });
+
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

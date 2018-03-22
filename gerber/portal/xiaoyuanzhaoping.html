@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/base.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/commonality.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/footer.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/neinav.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/header.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/shehuizhaoping.css">
+     <link rel="stylesheet" href="__TMPL__/public/assets/css/indexzyr.css">
+    <title>社会招聘</title>
+    <style>
+        .navboxcontent .container{
+            padding-right: 15px;
+            padding-left: 15px;
+            padding-bottom:10px;
+        }
+    </style>
+</head>
+<body>
+
+
+
+<div class="head">
+<div class="m">
+<!--顶部-->
+  <div class="container information">
+         <div class="content">
+            <!--  联系start  -->
+            <div class="relation">
+                <p><span class="iphone"></span><span class="serviceHotline">全国统一服务热线</span><span class="tit">400-8888-116</span></p>
+                <ul>
+                    <li><span class="branch"></span>网点信息</li>
+                    <li><span class="talents"></span>人才招聘</li>
+                    <li><span class="service"></span>在线客服</li>
+                </ul>
+            </div>
+            <!--   联系end   -->
+
+        </div>
+   </div>
+  
+</div>
+</div>
+
+<div class="qrct">
+<div class="m">
+
+<div class="ctle">
+
+   <a href="{:url('/')}"><img src="__TMPL__/public/assets/images/jimg1.png"/></a>
+
+</div>
+<!--主导航-->
+<div class="ctlk">
+       <ul>
+           <volist name="navInfo" id="navInfoVo">
+               <if condition="$navInfoVo.name == '加入我们'">
+                   <li><a href="{:url($navInfoVo.href)}" target="{$navInfoVo.target}" class="iiiw">{$navInfoVo.name}</a></li>
+                   <else/>
+                   <li><a href="{:url($navInfoVo.href)}" target="{$navInfoVo.target}">{$navInfoVo.name}</a></li>
+               </if>
+           </volist>
+      </ul>
+</div>
+
+<div class="ctrg">
+    <img src="__TMPL__/public/assets/images/jimg2.png"/>
+</div>
+</div>
+</div>
+
+
+<div class="bgwhite">
+    <div class="ServiceLife">
+        <img src="__TMPL__/public/assets/img/img22.png" class="img-responsive" alt="">
+    </div>
+        <div class="navtwocontent">
+        <div class="container navtwobox">
+        <div class="row">
+            <!--二级导航-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-lg-offset-3 marginleft29">
+            <ul class="list list-unstyled">
+                <volist name="twoNav" id="twoNavVo">
+                    <if condition="$twoNavVo.name == '校园招聘'">
+                        <li><a href="{:url($twoNavVo.href)}" target="{$twoNavVo.target}" class="activelink">{$twoNavVo.name}</a></li>
+                        <else />
+                        <li><a href="{:url($twoNavVo.href)}" target="{$twoNavVo.target}">{$twoNavVo.name}</a></li>
+                    </if>
+                </volist>
+            </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+    <div class="container padding80 paddintop110">
+        <h2 class="shezhao">
+            校园招聘
+        </h2>
+        <div class="boder"></div>
+        <h2 class="yelltext marginnone">
+            CAMPUS
+        </h2>
+        <h2 class="yelltext marginnone">RECRUITMENT
+        </h2>
+    </div>
+
+    <div class="container paddingtop20">
+
+
+
+        <iframe width="100%" align="center" height="840" id="win" name="win" onload="Javascript:SetWinHeight(this)" frameborder="0" scrolling="no" src="http://xt.brc.com.cn:8098/xt/personregisterAction!forwardRecruitPosList.do?param=1"></iframe>
+
+
+
+
+    </div>
+
+    <div class="bgcontent">
+        <div class="container bgcon">
+        </div>
+        <div class="bgf"></div>
+    </div>
+</div>
+
+
+<div class="Footer">
+
+    <div class="x">
+
+        <div class="lkqr">
+            <img src="__TMPL__/public/assets/img/foot_logo.png"/>
+        </div>
+
+        <div class="lkqc">
+
+            <span>如遇到问题，请联系我们</span>
+
+            <p class="kmws">地址：成都市高新西区西芯大道9号</p>
+            <p>服务热线：400-8888-116        &nbsp;&nbsp;   审计监督：028-87826372</p>
+            <p>招标采购热线：028-87826299    &nbsp;&nbsp;嘉宝股份前台：028-87829522</p>
+
+        </div>
+
+        <div class="lkqf">
+            <img src="__TMPL__/public/assets/img/logo_wx.png"/>
+            <p>官方微信</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>

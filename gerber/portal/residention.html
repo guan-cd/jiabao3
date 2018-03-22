@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	    <link rel="stylesheet" href="__TMPL__/public/assets/css/bootstrap.css">
+	    <link rel="stylesheet" href="__TMPL__/public/assets/css/base.css">
+	    <link rel="stylesheet" href="__TMPL__/public/assets/css/commonality.css">
+	    <link rel="stylesheet" type="text/css" href="__TMPL__/public/assets/css/Residential.css"/>
+	    <link rel="stylesheet" type="text/css" href="__TMPL__/public/assets/css/indexzyr.css"/>
+	    <script type="text/javascript" src="__TMPL__/public/assets/js/jquery-1.11.3.min.js"></script>
+	    <title>住宅</title>
+	</head>
+	<body>
+
+	<div class="head">
+<div class="m">
+
+  <div class="container information">
+         <div class="content">
+            <!--  联系start  -->
+            <div class="relation">
+                <p><span class="iphone"></span><span class="serviceHotline">全国统一服务热线</span><span class="tit">400-8888-116</span></p>
+                <ul>
+                    <li><span class="branch"></span>网点信息</li>
+                    <li><span class="talents"></span>人才招聘</li>
+                    <li><span class="service"></span>在线客服</li>
+                </ul>
+            </div>
+            <!--   联系end   -->
+
+        </div>
+   </div>
+  
+</div>
+</div>
+
+<div class="qrct">
+<div class="m">
+
+<div class="ctle">
+
+   <a href="{:url('/')}"><img src="__TMPL__/public/assets/images/jimg1.png"/></a>
+
+</div>
+<!--主导航-->
+<div class="ctlk">
+       <ul>
+		   <volist name="navInfo" id="navInfoVo">
+			   <if condition="$navInfoVo.name == '业务介绍'">
+				   <li><a href="{:url($navInfoVo.href)}" target="{$navInfoVo.target}" class="iiiw">{$navInfoVo.name}</a></li>
+				   <else/>
+				   <li><a href="{:url($navInfoVo.href)}" target="{$navInfoVo.target}">{$navInfoVo.name}</a></li>
+			   </if>
+		   </volist>
+      </ul>
+</div>
+
+<div class="ctrg">
+    <img src="__TMPL__/public/assets/images/jimg2.png"/>
+</div>
+</div>
+</div>
+
+
+		<div class="z-banner">
+		    <ul>
+		    	<li>
+		    		<img src="__TMPL__/public/assets/images/jimg3.png">
+		    	</li>
+		    </ul>
+		</div>
+		<!--二级导航-->
+	<div class="lmqr">
+     <ul>
+		 <volist name="twoNav" id="twoNavVo">
+			 <if condition="$twoNavVo.name == '住宅'">
+				 <li class="liqr"><a href="{:url($twoNavVo.href)}" target="{$twoNavVo.target}">{$twoNavVo.name}</a></li>
+				 <else />
+				 <li ><a href="{:url($twoNavVo.href)}" target="{$twoNavVo.target}">{$twoNavVo.name}</a></li>
+			 </if>
+		 </volist>
+
+     </ul>
+</div>
+		
+		<div class="shang zhuz">
+			<div class="container n">
+				<h1 class="gsfl">住宅</h1>
+	            <div class="ctoi">
+	                RESIDENTIAL
+	            </div>
+				
+				<ul class="zpart2">
+					<a href="{:url('portal/Busint/index')}"><li class="zling">全部</li></a>
+					<volist name="area" id="areaVo">
+						<a href="{:url('portal/Busint/getList',array('areaId'=>$areaVo.id))}"><li>{$areaVo.area_cont}</li></a>
+					</volist>
+				</ul>
+				
+				<div class="zpart3">
+					<div class="tabs">
+						<!--<div>
+							<p>
+								<a href="loupanxiangqing.html"><img src="__TMPL__/public/assets/img/z1.jpg"/></a>
+							</p>
+							<div class="xq">
+								<p>公关1881</p>
+								<div>
+									<a href="javascript:void(0);">详情</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<p>
+								<a href="loupanxiangqing.html"><img src="__TMPL__/public/assets/img/z2.jpg"/></a>
+							</p>
+							<div class="xq">
+								<p>龙源府邸</p>
+								<div>
+									<a href="javascript:void(0);">详情</a>
+								</div>
+							</div>
+						</div>
+						
+						<div>
+							<p>
+								<a href="loupanxiangqing.html"><img src="__TMPL__/public/assets/img/z3.jpg"/></a>
+							</p>
+							<div class="xq">
+								<p>武汉林肯公园</p>
+								<div>
+									<a href="javascript:void(0);">详情</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<p>
+								<a href="loupanxiangqing.html">	<img src="__TMPL__/public/assets/img/z4.jpg"/></a>
+							</p>
+							<div class="xq">
+								<p>重庆帕提欧</p>
+								<div>
+									<a href="javascript:void(0);">详情</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<p>
+								<a href="loupanxiangqing.html">	<img src="__TMPL__/public/assets/img/z5.jpg"/></a>
+							</p>
+							<div class="xq">
+								<p>果岭公元</p>
+								<div>
+									<a href="javascript:void(0);">详情</a>
+								</div>
+							</div>
+						</div>
+						<div>
+							<p>
+								<img src="__TMPL__/public/assets/img/z6.jpg"/>
+							</p>
+							<div class="xq">
+								<p>苏州COCO蜜园</p>
+								<div>
+									<a href="javascript:void(0);">详情</a>
+								</div>
+							</div>
+						</div>-->
+						<for start="0" end="$arrCount"  step="1" name="i" >
+							<div>
+								<p>
+									<if condition="$arcListMin['data'][$i]['other_url'] == ''">
+										<a href="{:url('portal/Common/busint',array('arcId'=>$arcListMin['data'][$i]['id']))}"><img src="__ROOT__/upload/{$arcListMin['data'][$i]['more']['thumbnail']}" style="width: 416px;height: 233px"/></a>
+										<else />
+										<a href="{$arcListMin['data'][$i]['other_url']}"><img src="__ROOT__/upload/{$arcListMin['data'][$i]['more']['thumbnail']}" style="width: 416px;height: 233px"/></a>
+									</if>
+
+
+								</p>
+								<div class="xq">
+									<p>{$arcListMin['data'][$i]['post_title']}</p>
+									<div>
+										<if condition="$arcListMin['data'][$i]['other_url'] == ''">
+
+											<a href="{:url('portal/Common/busint',array('arcId'=>$arcListMin['data'][$i]['id']))}">详情</a>
+										<else />
+											<a href="{$arcListMin['data'][$i]['other_url']}">详情</a>
+										</if>
+
+
+									</div>
+								</div>
+							</div>
+						</for>
+
+
+					</div>
+					<!--<div class="tabs">
+						<div>
+							<p>
+								<img src="__TMPL__/public/assets/img/z1.jpg"/>
+							</p>
+							<div class="xq">
+								<p>公关1881</p>
+								<div>
+									<a href="javascript:void(0);">详情</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs">
+						<div>
+							<p>
+								<img src="__TMPL__/public/assets/img/z2.jpg"/>
+							</p>
+							<div class="xq">
+								<p>公关1881</p>
+								<div>
+									<a href="javascript:void(0);">详情</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs">
+						<div>
+							<p>
+								<img src="__TMPL__/public/assets/img/z3.jpg"/>
+							</p>
+							<div class="xq">
+								<p>公关1881</p>
+								<div>
+									<a href="javascript:void(0);">详情</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs">
+						<div>
+							<p>
+								<img src="__TMPL__/public/assets/img/z4.jpg"/>
+							</p>
+							<div class="xq">
+								<p>公关1881</p>
+								<div>
+									<a href="javascript:void(0);">详情</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs">
+						<div>
+							<p>
+								<img src="__TMPL__/public/assets/img/z5.jpg"/>
+							</p>
+							<div class="xq">
+								<p>公关1881</p>
+								<div>
+									<a href="javascript:void(0);">详情</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tabs">
+						<div>
+							<p>
+								<img src="__TMPL__/public/assets/img/z6.jpg"/>
+							</p>
+							<div class="xq">
+								<p>公关1881</p>
+								<div>
+									<a href="javascript:void(0);">详情</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					
+				</div>-->
+				
+				<div>
+					<div class="pagex">{$page}</div>
+				</div>
+				</div>
+			<img class="banner" src="__TMPL__/public/assets/img/img27.png"  alt="">
+			
+		</div>
+		</div>
+		<div class="wh-bj-con" style="">
+		    <img class="" src="__TMPL__/public/assets/img/footer.jpg"  alt="">
+		</div>
+		
+		<script type="text/javascript" src="__TMPL__/public/assets/js/Residential.js"></script>
+
+
+	</body>
+</html>

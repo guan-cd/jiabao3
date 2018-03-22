@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/base.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/swiper.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/welfare.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/commonality.css">
+     <link rel="stylesheet" href="__TMPL__/public/assets/css/indexzyr.css">
+        <link rel="stylesheet" href="__TMPL__/public/assets/css/neinav.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/header.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/shehuizhaoping.css">
+    <script src="__TMPL__/public/assets/js/jquery-2.1.4.js"></script>
+    <script src="__TMPL__/public/assets/js/index.js"></script>
+    <title>公司福利</title>
+</head>
+<body>
+
+
+<div class="head">
+<div class="m">
+<!--顶部-->
+  <div class="container information">
+         <div class="content">
+            <!--  联系start  -->
+            <div class="relation">
+                <p><span class="iphone"></span><span class="serviceHotline">全国统一服务热线</span><span class="tit">400-8888-116</span></p>
+                <ul>
+                    <li><span class="branch"></span>网点信息</li>
+                    <li><span class="talents"></span>人才招聘</li>
+                    <li><span class="service"></span>在线客服</li>
+                </ul>
+            </div>
+            <!--   联系end   -->
+
+        </div>
+   </div>
+  
+</div>
+</div>
+
+<div class="qrct">
+<div class="m">
+
+<div class="ctle">
+
+   <a href="{:url('/')}"><img src="__TMPL__/public/assets/images/jimg1.png"/></a>
+
+</div>
+<!--主导航-->
+<div class="ctlk">
+       <ul>
+           <volist name="navInfo" id="navInfoVo">
+               <if condition="$navInfoVo.name == '加入我们'">
+                   <li><a href="{:url($navInfoVo.href)}" target="{$navInfoVo.target}" class="iiiw">{$navInfoVo.name}</a></li>
+                   <else/>
+                   <li><a href="{:url($navInfoVo.href)}" target="{$navInfoVo.target}">{$navInfoVo.name}</a></li>
+               </if>
+           </volist>
+      </ul>
+</div>
+
+
+<div class="ctrg">
+    <img src="__TMPL__/public/assets/images/jimg2.png"/>
+</div>
+</div>
+</div>
+
+
+    <div class="bj-sh swiper-container" style="width: 100%;">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img style="width: 100%;" src="__TMPL__/public/assets/img/jimg3.png" alt=""></div>
+
+        </div>
+    </div>
+
+
+ <div class="navtwocontent">
+        <div class="container navtwobox">
+        <div class="row">
+            <!--二级导航-->
+        <div class="col-lg-7 col-md-7 col-sm-7 col-lg-offset-3 marginleft29">
+            <ul class="list list-unstyled">
+                <volist name="twoNav" id="twoNavVo">
+                    <if condition="$twoNavVo.name == '公司福利'">
+                        <li><a href="{:url($twoNavVo.href)}" target="{$twoNavVo.target}" class="activelink">{$twoNavVo.name}</a></li>
+                        <else />
+                        <li><a href="{:url($twoNavVo.href)}" target="{$twoNavVo.target}">{$twoNavVo.name}</a></li>
+                    </if>
+                </volist>
+            </ul>
+        </div>
+        </div>
+        </div>
+        </div>
+
+
+    <div class="zp" style="width: 100%;">
+        <div class="padd-23 container">
+            <h1 class="gsfl">公司福利</h1>
+            <div class="ctoi">
+                <p style="margin-bottom: 20px!important;">CORPORATE  WELFARE</p>
+            </div>
+            <div class="conte">
+                <!--<img src="__TMPL__/public/assets/img/lgjtzb.jpg" style="width: 100%;" alt="">
+                <p class="zbdz" >蓝光总部园区位于成都市高新西区西芯大道9号,占地66000平米,绿化率达90%。2002年建成并投入使用</p>
+                <div class="fitnessRoom">
+                    <p><span></span>健身房</p>
+                </div>
+                <img style="width: 100%;" src="__TMPL__/public/assets/img/gsfl.png" alt="">
+                <img src="__TMPL__/public/assets/img/lyj.jpg" style="width: 100%;margin-top: 20px;"  alt="">
+                <p class="" style="margin: 40px 0;font-size: 15px;" >总部健身房设置齐全，有淋浴间、瑜伽房、动感单车及功能锻炼区，并配有专职教练，员工可以根据自己的喜好和条件在教练的帮助下制定专项健身计划和锻炼方式。</p>
+                <div class="fitnessRoom-1 fitnessRoom">
+                    <p><span></span>运动场所</p>
+                </div>
+                <div class=" mg-b-20">
+                    <div class="">
+                        <img src="__TMPL__/public/assets/img/lanqiuk.jpg" alt="">
+                    </div>
+                    <div class="">
+                        <img class="biao" src="__TMPL__/public/assets/img/lanqiushi.jpg" style="margin-left: 3%;" alt="">
+                    </div>
+                    <div class="" style="float: ;">
+                        <img src="__TMPL__/public/assets/img/yyci.jpg" alt="">
+                    </div>
+                    <div class=" bj-c"  >
+                            <p >总部园区的篮球、羽毛网球运动场和游泳池,是每年蓝光运动会的联系场和团队运动比赛的主要场所。公司提倡“我运动，我健康，我快乐”的健康生活理念，制定了多层次的健康管理制度并形成了蓝光的健康文化。</p>
+
+                    </div>
+                </div>
+                <div class="fitnessRoom-2 fitnessRoom">
+                    <p><span></span>艺术中心</p>
+                </div>
+                <div class="yisuzx">
+                    <div class="float-le">
+                        <img src="__TMPL__/public/assets/img/zuowei.jpg" alt="">
+                    </div>
+                    <div class="float-ri">
+                        <img src="__TMPL__/public/assets/img/yfzi.jpg" class="bot" alt="">
+                        <img src="__TMPL__/public/assets/img/henzuowei.jpg" alt="">
+                    </div>
+
+                </div>
+                <p style="clear: both;"></p>
+                <div class="fitnessRoom-3 fitnessRoom">
+                    <p><span></span>食堂</p>
+                </div>
+                <div class="stang">
+                    <div class="float-le">
+                        <img src="__TMPL__/public/assets/img/st1.jpg" alt="" class="bot">
+                        <img src="__TMPL__/public/assets/img/st2.jpg" alt="">
+                    </div>
+                    <div class="float-ri">
+
+                        <img src="__TMPL__/public/assets/img/st3.jpg" alt="">
+                    </div>
+                </div>
+                <p style="clear: both;"></p>
+                <div class="fitnessRoom-4 fitnessRoom">
+                    <p><span></span>会所</p>
+                </div>
+
+                <div class="yisuzx zdy">
+                    <div class="float-le">
+                        <img src="__TMPL__/public/assets/img/huis2.jpg"  alt="">
+                    </div>
+                    <div class="float-ri">
+                        <img src="__TMPL__/public/assets/img/huis3.jpg" class="bot" alt="">
+                        <img src="__TMPL__/public/assets/img/huis1.jpg" alt="">
+                    </div>
+
+                </div>
+                <p style="clear: both;"></p>
+                <div class="fitnessRoom-5 fitnessRoom">
+                    <p><span></span>园区风光</p>
+                </div>
+                <div class="yuna1">
+                    <div class="yuna1-1">
+                        <img src="__TMPL__/public/assets/img/yuan1.jpg" class="bot" alt="">
+                        <img src="__TMPL__/public/assets/img/yuan2.jpg" alt="">
+                    </div>
+                    <div class="yuna1-2">
+                        <img src="__TMPL__/public/assets/img/yuan3.jpg" alt="">
+                    </div>
+                    <div class="yuna1-3">
+                        <img src="__TMPL__/public/assets/img/yuan4.jpg" class="bot" alt="">
+                        <img src="__TMPL__/public/assets/img/yuan5.jpg" alt="">
+                    </div>
+                </div>
+                <p style="clear: both;"></p>
+                <div class="yuan2">
+                    <div class="yuan2-1">
+                        <img src="__TMPL__/public/assets/img/yaun6.jpg" alt="">
+                    </div>
+                    <div class="yuan2-2">
+                        <img src="__TMPL__/public/assets/img/yuan9.jpg" class="bot" alt="">
+                        <img src="__TMPL__/public/assets/img/yuan7.jpg" alt="">
+                    </div>
+                    <div class="yuan2-3">
+                        <img src="__TMPL__/public/assets/img/yuan10.jpg" alt="">
+                    </div>
+                </div>
+                <p style="clear: both;"></p>
+                <div class="fitnessRoom-5 fitnessRoom">
+                    <p><span></span>办公环境</p>
+                </div>
+                <div class="huanj1">
+                    <div class="huanj1-1">
+                        <img src="__TMPL__/public/assets/img/huanj1.jpg" alt="">
+                    </div>
+
+                    <div class="huanj1-2">
+                        <img src="__TMPL__/public/assets/img/huanj2.jpg" class="bot" alt="">
+                        <img src="__TMPL__/public/assets/img/huanj3.jpg" alt="">
+                    </div>
+                    &lt;!&ndash;<div class="huanj1-3">
+
+                    </div>&ndash;&gt;
+                </div>
+                <p style="clear: both;"></p>
+                <div class="huanj2">
+                    <div class="huanj1-1">
+                        <img src="__TMPL__/public/assets/img/huanj4.jpg" class="bot" alt="">
+                        <img src="__TMPL__/public/assets/img/huanj6.jpg" alt="">
+                    </div>
+
+                    <div class="huanj1-2">
+                        <img src="__TMPL__/public/assets/img/huanj5.jpg" class="bot" alt="">
+                        <img src="__TMPL__/public/assets/img/huanj7.jpg" alt="">
+                    </div>
+                </div>
+                <p style="clear: both;"></p>
+                <div class="fitnessRoom-6 fitnessRoom">
+                    <p><span></span>图书室</p>
+                </div>
+                <div class="huanj2">
+                    <div class="huanj1-1">
+                        <img src="__TMPL__/public/assets/img/tushus1.jpg" alt="">
+                    </div>
+
+                    <div class="huanj1-2" style="width: 330px;">
+                        <img src="__TMPL__/public/assets/img/tushus2.jpg" class="bot" alt="">
+                        <img src="__TMPL__/public/assets/img/tushus3.jpg" alt="">
+                    </div>
+                </div>
+                <img style="position: absolute;bottom: 0;width: 100%;" src="__TMPL__/public/assets/img/img27.png" alt="">-->
+                {$article.post_content|htmlspecialchars_decode}
+                <img style="position: absolute;bottom: 0;width: 100%;" src="__TMPL__/public/assets/img/img27.png" alt=""/>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="Footer">
+
+        <div class="x">
+
+            <div class="lkqr">
+                <img src="__TMPL__/public/assets/img/foot_logo.png"/>
+            </div>
+
+            <div class="lkqc">
+
+                <span>如遇到问题，请联系我们</span>
+
+                <p class="kmws">地址：成都市高新西区西芯大道9号</p>
+                <p>服务热线：400-8888-116        &nbsp;&nbsp;   审计监督：028-87826372</p>
+                <p>招标采购热线：028-87826299    &nbsp;&nbsp;嘉宝股份前台：028-87829522</p>
+
+            </div>
+
+            <div class="lkqf">
+                <img src="__TMPL__/public/assets/img/logo_wx.png"/>
+                <p>官方微信</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>关注嘉宝</title>
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/base.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/commonality.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/culture.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/introduce.css">
+    <link rel="stylesheet" href="__TMPL__/public/assets/css/indexzyr.css">
+    <style type="text/css">
+        body, html{width: 100%;height: 100%;margin:0;font-family:"微软雅黑";}
+        #allmap {height: 716px;width:100%;overflow: hidden;}
+        #result {width:100%;font-size:12px;}
+        dl,dt,dd,ul,li{
+            margin:0;
+            padding:0;
+            list-style:none;
+        }
+        dt{
+            font-size:14px;
+            font-family:"微软雅黑";
+            font-weight:bold;
+            border-bottom:1px dotted #000;
+            padding:5px 0 5px 5px;
+            margin:5px 0;
+        }
+        dd{
+            padding:5px 0 0 5px;
+        }
+        li{
+            line-height:28px;
+        }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=94OCcDi7Nq2c5t9qcPbl3zmsEHebr42C"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.js"></script>
+    <link rel="stylesheet" href="http://api.map.baidu.com/library/SearchInfoWindow/1.5/src/SearchInfoWindow_min.css" />
+</head>
+<body>
+<div class="head">
+<div class="m">
+
+  <div class="container information">
+         <div class="content">
+            <!--  联系start  -->
+            <div class="relation">
+                <p><span class="iphone"></span><span class="serviceHotline">全国统一服务热线</span><span class="tit">400-8888-116</span></p>
+                <ul>
+                    <li><span class="branch"></span>网点信息</li>
+                    <li><span class="talents"></span>人才招聘</li>
+                    <li><span class="service"></span>在线客服</li>
+                </ul>
+            </div>
+            <!--   联系end   -->
+
+        </div>
+   </div>
+  
+</div>
+</div>
+
+<div class="qrct">
+<div class="m">
+
+<div class="ctle">
+
+   <a href="{:url('/')}"><img src="__TMPL__/public/assets/images/jimg1.png"/></a>
+
+</div>
+
+<div class="ctlk">
+       <ul>
+           <volist name="navInfo" id="navInfoVo">
+               <if condition="$navInfoVo.name == '走进嘉宝'">
+                   <li><a href="{:url($navInfoVo.href)}" class="iiiw">{$navInfoVo.name}</a></li>
+                   <else/>
+                   <li><a href="{:url($navInfoVo.href)}">{$navInfoVo.name}</a></li>
+               </if>
+           </volist>
+      </ul>
+</div>
+
+
+<div class="ctrg">
+    <img src="__TMPL__/public/assets/images/jimg2.png"/>
+</div>
+</div>
+</div>
+
+<div class="banner">
+   <img src="__TMPL__/public/assets/images/jimg3.png"/>
+</div>
+
+<div class="Cult">
+    <div class="container attention">
+        <p class="text-center">
+            <volist name="twoNav" id="twoNavVo">
+                <if condition="$twoNavVo.name == '关注嘉宝'">
+                    <a href="{:url($twoNavVo.href)}" target="{$twoNavVo.target}"><span class="attention-this">{$twoNavVo.name}</span></a>
+                    <else />
+                    <a href="{:url($twoNavVo.href)}" target="{$twoNavVo.target}"><span class="">{$twoNavVo.name}</span></a>
+                </if>
+            </volist>
+        </p>
+    </div>
+</div>
+
+
+<div class="lmds" style="margin-top: 30px;">
+      
+    <div class="m">
+
+      <div class="n">
+
+           <h1>联系我们</h1>
+
+           <div class="ctoi" style="width:240px; color: #94724d;">
+             CONTACT
+              US
+           </div>
+
+
+           <div style="clear: both;"></div>
+           <div class="mnls">
+               <div class="sslq">
+                  <p><img src="__TMPL__/public/assets/images/xsbb.png" style="vertical-align: text-top">
+                      <span>联系地址：四川省成都市高新西区西芯大道9号</span>
+                  </p>
+                   <p>
+                       <img src="__TMPL__/public/assets/images/xsbb2.png"style="vertical-align:text-top">
+                       <span>全国招聘热线：028—87826263</span>
+                   </p>
+               </div>
+               <div id="allmap">
+               </div>
+           </div>
+      </div>
+
+   </div>
+
+
+</div>
+
+
+<div class="iusa">
+   <img src="__TMPL__/public/assets/images/frfc.png">
+</div>
+
+
+<div class="Footer">
+ 
+  <div class="x">
+     
+     <div class="lkqr">
+          <img src="__TMPL__/public/assets/images/foot_logo.png"/>
+     </div>
+
+      <div class="lkqc">
+
+       <span>如遇到问题，请联系我们</span>
+
+         <p class="kmws">地址：成都市高新西区西芯大道9号</p>
+         <p>服务热线：400-8888-116        &nbsp;&nbsp;   审计监督：028-87826372</p>
+         <p>招标采购热线：028-87826299    &nbsp;&nbsp;嘉宝股份前台：028-87829522</p>
+          
+      </div>
+
+      <div class="lkqf">
+          <img src="__TMPL__/public/assets/images/logo_wx.png"/>
+          <p>官方微信</p>
+     </div>
+     
+  </div>
+
+</div>
+<script type="text/javascript">
+    // 百度地图API功能
+    var map = new BMap.Map('allmap');
+    var poi = new BMap.Point(103.966366,30.746648);
+    map.centerAndZoom(poi, 16);
+    map.enableScrollWheelZoom();
+
+    var content = '<div style="margin:0;line-height:20px;padding:2px;">' +
+            '<img src="__TMPL__/public/assets/images/logor.png" alt="" style="float:right;zoom:1;overflow:hidden;width:100px;height:100px;margin-left:3px;"/>' +
+            '地址：四川省成都市高新西区西芯大道9号<br/>电话：(028)87826263<br/>' +
+            '</div>';
+
+    //创建检索信息窗口对象
+    var searchInfoWindow = null;
+    searchInfoWindow = new BMapLib.SearchInfoWindow(map, content, {
+        title  : "嘉宝股份",      //标题
+        width  : 290,             //宽度
+        height : 105,              //高度
+        panel  : "panel",         //检索结果面板
+        enableAutoPan : true,     //自动平移
+        searchTypes   :[
+            BMAPLIB_TAB_SEARCH,   //周边检索
+            BMAPLIB_TAB_TO_HERE,  //到这里去
+            BMAPLIB_TAB_FROM_HERE //从这里出发
+        ]
+    });
+
+    var marker = new BMap.Marker(poi); //创建marker对象
+    marker.enableDragging(); //marker可拖拽
+//    marker.addEventListener("click", function(e){
+//        searchInfoWindow.open(marker);
+//    })
+    map.addOverlay(marker); //在地图中添加marker
+    searchInfoWindow.open(marker);
+</script>
+
+</body>
+</html>
